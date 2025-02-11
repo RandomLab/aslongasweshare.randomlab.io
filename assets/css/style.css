@@ -1,7 +1,12 @@
 /* custom font */
 @font-face {
-  font-family: compagnon;
-  src:  url('../fonts/Compagnon-Light.woff2') format('woff2');
+  font-family: syneTactile;
+  src:  url('../fonts/SyneTactile-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: syne;
+  src:  url('../fonts/Syne-ExtraBold.woff2') format('woff2');
 }
 
 @font-face {
@@ -14,7 +19,7 @@
   --padding: 1.5rem;
   --main-font-size: 1.2rem;
   --color-grey: #333;
-  --color-light: #efefef;
+  --color-light: #fff;
   --color-text: var(--color-grey);
   --color-background: var(--color-light);
   --font-family-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -55,33 +60,80 @@ img {
 }
 
 h1 {
-  font-family: "compagnon";
-  font-size: 3rem;
-  line-height: 2.3rem;
-  margin-bottom: 20px;
+  font-family: "syneTactile";
+  font-size: 8rem;
+  line-height: 0.5;
+  margin: 0 0 80px 0;
+  color: var(--color-grey);
+  -webkit-text-fill-color: white; 
+  -webkit-text-stroke: 2px var(--color-grey);
+  text-align: center;
+  font-weight: 400;
 }
 
-h2 {
+h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1;
   font-family: "junicode";
-  text-decoration: underline;
+  font-weight: 400;
+  margin: 0 0 50px 0;
 }
 
-header {
-  color: black;
+.content {
+  margin: 0 0 100px 0;
+}
+
+.content h1 {
+  text-align: center;
+  font-size: 2rem;
+  line-height: 0.8;
+  font-family: "junicode";
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+  -webkit-text-fill-color: unset;
+  -webkit-text-stroke: unset;
+}
+
+.content h2 {
+  font-family: "syne";
+  font-size: 1.8rem;
+  line-height: 1;
+  margin: 0 0 20px 0;
+  text-align: center;
+  font-weight: 400;
+}
+
+.content h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-family: "junicode";
+  font-weight: 400;
+}
+
+.content h4 {
+  font-family: "syneTactile";
+  font-size: 3rem;
+  line-height: 0.8;
+  margin: 40px 0 20px 0;
+  color: var(--color-grey);
+  text-align: center;
+  font-weight: 400;
+}
+
+.content p {
+  font-family: "junicode";
   font-size: 1.8rem;
   line-height: 2.3rem;
-  font-family: "junicode";
+  margin: 0 0 20px 0;
 }
 
-article {
-  counter-reset: footnotes;
+.content p span {
+  font-family: "syneTactile";
+  font-size: 1.6rem;
 }
-
-article h1 {
-  font-size: 2rem;
-  line-height: 1.3rem;
-}
-
 
 @media only screen and (min-width:1px) and (max-width: 720px) {
 
@@ -94,6 +146,33 @@ article h1 {
 
   figure {
     padding: 0;
+    margin: 0;
+  }
+
+  h1 {
+    font-size: 5rem;
+    margin: 0 0 20px 0;
+  }
+
+  .content {
+    margin: 0 0 50px 0;
+  }
+
+  .content h1 {
+    font-size: 1.3rem;
+  }
+
+  .content h2 {
+    font-size: 1.5rem;
+  }
+
+  .content h3 {
+    margin: 0 0 20px 0;
+  }
+
+  .content h4 {
+    font-size: 2rem;
+    margin: 0 0 20px 0;
   }
 
 }
